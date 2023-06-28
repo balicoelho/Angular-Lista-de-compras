@@ -1,0 +1,27 @@
+.container {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.container > h1 {
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+
+.th {
+  text-transform: capitalize;
+}
+
+.btn {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.delete {
+  list-style-type: none;
+}
+.delete > button {
+  border: none;
+  background-color: transparent;
+  color: red;
+}

@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="header">
+    <div class="logo-box">
+      <img src="./assets/Logo.png" class="rounded float-start" alt="" />
+    </div>
+    <div class="title-box">
+      <h1>Lista de Compras</h1>
+    </div>
+  </div>
+  <hr />
+  <div class="container content">
+    <div class="container container__title">
+      <h2>Deseja iniciar uma lista de compras?</h2>
+      <div class="container__title-inputs">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            [(ngModel)]="opcao"
+            value="yes"
+            (change)="showContent()"
+          />
+          <label class="form-check-label" for="flexRadioDefault1"> SIM </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            [(ngModel)]="opcao"
+            value="no"
+            (change)="showContent()"
+          />
+          <label class="form-check-label" for="flexRadioDefault2"> NÃO </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container__inclusao" *ngIf="showAddItem">
+      <app-inclusao></app-inclusao>
+    </div>
+
+    <div class="container container__resumo" *ngIf="showAddItem">
+      <app-resumo></app-resumo>
+    </div>
+  </div>
+</div>

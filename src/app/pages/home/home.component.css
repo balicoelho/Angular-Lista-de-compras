@@ -1,0 +1,47 @@
+* {
+  background-color: rgb(145, 187, 145);
+}
+.container-fluid {
+  min-height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  padding: 1rem 1rem;
+}
+
+.title-box {
+  text-align: center;
+  margin: auto;
+}
+
+.title-box > h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+.logo-box {
+  width: 7rem;
+}
+.logo-box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.container__title > h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+.form-check-label {
+  color: aliceblue;
+}

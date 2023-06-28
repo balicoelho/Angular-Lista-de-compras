@@ -1,0 +1,27 @@
+<div class="container">
+  <form action="">
+    <div class="mb-3">
+      <label for="addItem" class="form-label">Adicione um item:</label>
+      <input
+        [(ngModel)]="newItem"
+        type="text"
+        class="form-control"
+        id="addItem"
+        name="item"
+        (click)="order()"
+      />
+    </div>
+    <select
+      class="form-select addItem"
+      aria-label="Default select example"
+      [(ngModel)]="selectedOption"
+      name="option"
+    >
+      <option selected>Categoria</option>
+      <option *ngFor="let option of categorias" [ngValue]="option">
+        {{ option }}
+      </option>
+    </select>
+    <button class="btn btn-primary" (click)="addItem()">Adicionar</button>
+  </form>
+</div>
